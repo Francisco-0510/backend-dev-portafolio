@@ -1,0 +1,16 @@
+<div class="d-flex h-100 text-center bg-welcome">
+    <div class="cover-container d-flex w-100 h-100 p-3 bg-dark bg-opacity-50 mx-auto 5 flex-column">
+        <header class="mb-auto text-welcome" style="user-select: none;">
+            <p class="">Rodolfo Braquetes/ <span>Software Development</span></p>
+        </header>
+        <main class="px-3 text-welcome" style="user-select: none;">
+            <h1 class="display-1" [ngClass]="{'out': blurActive, 'in': !blurActive}" [innerHTML]="displayText"></h1>
+        </main>
+
+        <footer class="mt-auto">
+            <a (click)="redirectBio()" class="btn_gral btn_primary"><i class="fa fa-arrow-right"></i> Empezar</a>
+            <a (click)="redirectGithub()" target="_blank" class="btn_gral btn_secondary"><i
+                    class="fa fa-github"></i> Mi GitHub</a>
+        </footer>
+    </div>
+</div>

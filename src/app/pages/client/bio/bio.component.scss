@@ -1,0 +1,65 @@
+.empty {
+    border: none;
+    background-color: transparent;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+}
+
+.box-dev {
+    padding-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    // border: 1px solid black;
+}
+
+@keyframes changeColor {
+    0% { color: var(--green-bg2-btn); }
+    20% { color: var(--color-logo-twwitter); }
+    40% { color: var(--green-bg2-btn); }
+    60% { color: var(--color-logo-ig); }
+    80% { color: var(--orange-color); }
+    100% { color: var(--green-lemon-arcadia); }
+}
+  
+  .text-effect {
+    animation: changeColor 10s infinite;
+  }
+  
+
+.gitlab:hover{
+    color: var(--color-logo-gitlab);
+}
+
+.github:hover{
+    color: var(--color-logo-github);
+}
+
+.linkedIn:hover{
+    color: var(--color-logo-twwitter);
+}
+
+.facebook:hover{
+    color: var(--color-logo-face);
+}
+
+.instagram:hover{
+    color: var(--color-logo-ig);
+}
+
+.bio {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.lead {
+    font-size: 1.25rem; /* Tamaño de fuente similar a .lead */
+    font-weight: 300;
+    line-height: 1.6;
+}

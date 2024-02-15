@@ -1,0 +1,35 @@
+.out {
+    animation: fadeOutUpAnimation 10s ease-in-out forwards;
+    opacity: 1;
+}
+
+@keyframes fadeOutUpAnimation {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: .5;
+        transform: translateY(-100%);
+    }
+}
+
+
+.in {
+    animation: fadeInUpAnimation 10s ease-in-out forwards;
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+@keyframes fadeInUpAnimation {
+    0% {
+        opacity: .5;
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
